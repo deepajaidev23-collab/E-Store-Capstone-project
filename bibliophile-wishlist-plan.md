@@ -1,4 +1,4 @@
-# BookWorm — Wishlist Feature Plan
+# Bibliophile — Wishlist Feature Plan
 
 ## Top-Level Overview
 
@@ -111,7 +111,7 @@ wishlist_items
 - `supabase/migrations/003_catalogue_rls.sql` — pattern to follow for RLS
 - `src/types/cart.ts` — `Wishlist` and `WishlistItem` domain types already
   defined; columns must match exactly
-- `bookworm-phase6-supabase-plan.md` §10 `wishlists` and `wishlist_items` —
+- `bibliophile-phase6-supabase-plan.md` §10 `wishlists` and `wishlist_items` —
   detailed column and policy design already documented
 
 **Status:** `[x] done`

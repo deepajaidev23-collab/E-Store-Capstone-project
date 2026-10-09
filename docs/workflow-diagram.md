@@ -1,8 +1,8 @@
-# BookWorm — High-Level Workflow Diagram
+# Bibliophile — High-Level Workflow Diagram
 
 ```mermaid
 flowchart TD
-    A([User visits BookWorm]) --> B{Authenticated?}
+    A([User visits Bibliophile]) --> B{Authenticated?}
 
     B -- No --> C[Browse Home / Catalogue / Book Detail]
     B -- Yes --> C

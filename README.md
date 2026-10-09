@@ -1,4 +1,4 @@
-# BookWorm — Full-Stack e-Book Store Capstone
+# Bibliophile — Full-Stack e-Book Store Capstone
 
 [![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -6,7 +6,7 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?logo=supabase&logoColor=white)](https://supabase.com/)
 
-**BookWorm** is a modern, responsive full-stack e-book store capstone application. It provides an end-to-end digital bookstore experience: browsing and searching catalogues, managing wishlists and carts, applying discounts and loyalty points, processing simulated payments, and tracking order history with rock-solid server-side database integrity and security.
+**Bibliophile** is a modern, responsive full-stack e-book store capstone application. It provides an end-to-end digital bookstore experience: browsing and searching catalogues, managing wishlists and carts, applying discounts and loyalty points, processing simulated payments, and tracking order history with rock-solid server-side database integrity and security.
 
 ---
 
@@ -229,7 +229,7 @@ Inside `e-book-store-fe/`:
 
 ```mermaid
 flowchart TD
-    A([User visits BookWorm]) --> B{Authenticated?}
+    A([User visits Bibliophile]) --> B{Authenticated?}
 
     B -- No --> C[Browse Catalogue & Book Details]
     B -- Yes --> C

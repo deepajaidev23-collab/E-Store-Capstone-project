@@ -2,7 +2,7 @@
 
 ## Top-Level Overview
 
-This plan establishes an end-to-end error handling, resilient retry, fallback UI, logging, and offline strategy across the BookWorm application. The architecture encompasses:
+This plan establishes an end-to-end error handling, resilient retry, fallback UI, logging, and offline strategy across the Bibliophile application. The architecture encompasses:
 - React 19 / Vite frontend infrastructure (React Error Boundaries, route-level `errorElement` fallbacks, centralized toast/alert system, accessible live announcements)
 - TanStack React Query retry and cache recovery policies with fine-grained error classification
 - Domain-specific error handling for Authentication, Catalogue, Product Details, Wishlist, Cart, Checkout, Payment, Orders, and Reviews

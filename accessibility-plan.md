@@ -2,7 +2,7 @@
 
 ## Overview
 
-This plan documents every accessibility deficiency found across the BookWorm frontend. Findings are grounded in a full source-code audit of all pages, layouts, UI components, and feature components. Issues are grouped into **five priority tiers** (P1–P5) and ordered for implementation — fixing foundational components first produces the widest cascading improvements.
+This plan documents every accessibility deficiency found across the Bibliophile frontend. Findings are grounded in a full source-code audit of all pages, layouts, UI components, and feature components. Issues are grouped into **five priority tiers** (P1–P5) and ordered for implementation — fixing foundational components first produces the widest cascading improvements.
 
 ---
 
@@ -163,22 +163,22 @@ There is no mechanism to skip the navigation bar. Every keyboard user must Tab t
 Every page shows `e-book-store-fe` as the tab/window title.
 
 **Todo list:**
-- Create a `usePageTitle(title: string)` hook that calls `document.title = \`${title} — BookWorm\`` inside a `useEffect`
+- Create a `usePageTitle(title: string)` hook that calls `document.title = \`${title} — Bibliophile\`` inside a `useEffect`
 - Call it at the top of each page component:
-  - `HomePage`: "BookWorm — Discover Your Next Read"
-  - `CataloguePage`: "Catalogue — BookWorm" (or "Self-help — BookWorm" when category active)
-  - `BookDetailPage`: `${book.title} — BookWorm`
-  - `CartPage`: "Shopping Cart — BookWorm"
-  - `CheckoutPage`: "Checkout — BookWorm"
-  - `PaymentPage`: "Payment — BookWorm"
-  - `OrderConfirmationPage`: "Order Confirmed — BookWorm"
-  - `OrdersPage`: "My Orders — BookWorm"
-  - `OrderDetailPage`: "Order #… — BookWorm"
-  - `LoginPage`: "Sign In — BookWorm"
-  - `RegisterPage`: "Create Account — BookWorm"
-  - `ProfilePage`: "My Profile — BookWorm"
-  - `NotFoundPage`: "Page Not Found — BookWorm"
-- Update `index.html` title to `BookWorm` as the default
+  - `HomePage`: "Bibliophile — Discover Your Next Read"
+  - `CataloguePage`: "Catalogue — Bibliophile" (or "Self-help — Bibliophile" when category active)
+  - `BookDetailPage`: `${book.title} — Bibliophile`
+  - `CartPage`: "Shopping Cart — Bibliophile"
+  - `CheckoutPage`: "Checkout — Bibliophile"
+  - `PaymentPage`: "Payment — Bibliophile"
+  - `OrderConfirmationPage`: "Order Confirmed — Bibliophile"
+  - `OrdersPage`: "My Orders — Bibliophile"
+  - `OrderDetailPage`: "Order #… — Bibliophile"
+  - `LoginPage`: "Sign In — Bibliophile"
+  - `RegisterPage`: "Create Account — Bibliophile"
+  - `ProfilePage`: "My Profile — Bibliophile"
+  - `NotFoundPage`: "Page Not Found — Bibliophile"
+- Update `index.html` title to `Bibliophile` as the default
 
 ---
 

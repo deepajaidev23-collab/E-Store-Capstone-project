@@ -1,8 +1,8 @@
-# Performance Audit & Optimization Plan — BookWorm
+# Performance Audit & Optimization Plan — Bibliophile
 
 ## Top-Level Overview
 
-This document presents a comprehensive performance audit of the BookWorm application across front-end bundling, routing, data fetching, database indexing, React rendering, and asset delivery. 
+This document presents a comprehensive performance audit of the Bibliophile application across front-end bundling, routing, data fetching, database indexing, React rendering, and asset delivery. 
 
 The audit focuses on **meaningful real-world performance improvements** (e.g., initial load time, bandwidth usage, responsive filtering, database query efficiency) rather than premature micro-optimizations.
 

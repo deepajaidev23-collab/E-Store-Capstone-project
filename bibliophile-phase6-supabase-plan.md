@@ -2,7 +2,7 @@
 
 ## Top-Level Overview
 
-This document designs the complete Supabase backend for BookWorm. Nothing is
+This document designs the complete Supabase backend for Bibliophile. Nothing is
 implemented here. Every decision is grounded in the existing TypeScript domain
 types (`book.ts`, `cart.ts`, `order.ts`, `user.ts`, `review.ts`) and the
 `BookRepository` interface that the UI already depends on.

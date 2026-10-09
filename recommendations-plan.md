@@ -2,7 +2,7 @@
 
 ## Overview
 
-BookWorm needs a deterministic recommendation system that ranks books using catalogue signals (same author, same category, same publisher) weighted by relevance. The system must be designed so the algorithm can be replaced later without touching any UI component.
+Bibliophile needs a deterministic recommendation system that ranks books using catalogue signals (same author, same category, same publisher) weighted by relevance. The system must be designed so the algorithm can be replaced later without touching any UI component.
 
 The design introduces a `RecommendationService` abstraction — a TypeScript interface backed by a concrete `CatalogueRecommendationService` class. Services are instantiated once in a new `services/index.ts`, mirroring the existing `repositories/index.ts` pattern. Hooks call the service; components call hooks; neither layer knows how recommendations are computed.
 

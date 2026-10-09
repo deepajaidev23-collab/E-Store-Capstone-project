@@ -1,8 +1,8 @@
-# BookWorm E-Book Store — Implementation Plan
+# Bibliophile E-Book Store — Implementation Plan
 
 ## Top-Level Overview
 
-BookWorm is a customer-facing e-commerce platform for purchasing physical books and e-books.
+Bibliophile is a customer-facing e-commerce platform for purchasing physical books and e-books.
 The project starts from a clean Vite + React 19 + TypeScript scaffold located at
 `e-book-store-fe/`. No routing, styling framework, state library, or Supabase client exists yet.
 

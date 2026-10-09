@@ -1,4 +1,4 @@
-# BookWorm — Shopping Cart Feature Plan
+# Bibliophile — Shopping Cart Feature Plan
 
 ## Top-Level Overview
 
@@ -227,7 +227,7 @@ Note: `cart_items` needs UPDATE (for quantity changes) — unlike `wishlist_item
 - `supabase/migrations/006_wishlists_schema.sql` — structural pattern
 - `supabase/migrations/007_wishlists_rls.sql` — RLS pattern
 - `src/types/cart.ts` — `Cart`, `CartItem`, `Coupon` domain types
-- Phase 6 plan (`bookworm-supabase-repository-plan.md`) §3 — `carts`,
+- Phase 6 plan (`bibliophile-supabase-repository-plan.md`) §3 — `carts`,
   `cart_items`, `coupons` column designs
 
 **Status:** `[ ] pending`

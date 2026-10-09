@@ -1,5 +1,5 @@
 -- 005_seed_data.sql
--- Seed data for the BookWorm catalogue, derived from mockData.ts.
+-- Seed data for the Bibliophile catalogue, derived from mockData.ts.
 -- UUIDs are stable constants so foreign-key cross-references resolve correctly.
 -- Safe to re-run: uses INSERT ... ON CONFLICT DO NOTHING.
 

@@ -1,8 +1,8 @@
-# Complete Testing Strategy & Quality Assurance Plan for BookWorm
+# Complete Testing Strategy & Quality Assurance Plan for Bibliophile
 
 ## Top-Level Overview
 
-This document outlines the testing strategy for BookWorm, covering Unit, Component, Integration, and End-to-End (E2E) testing layers. It evaluates current test coverage against requirements, establishes testing standards, identifies testing gaps, and prioritizes critical user journeys.
+This document outlines the testing strategy for Bibliophile, covering Unit, Component, Integration, and End-to-End (E2E) testing layers. It evaluates current test coverage against requirements, establishes testing standards, identifies testing gaps, and prioritizes critical user journeys.
 
 ---
 
@@ -19,7 +19,7 @@ This document outlines the testing strategy for BookWorm, covering Unit, Compone
 
 ```mermaid
 flowchart TD
-    subgraph Testing_Pyramid [BookWorm Testing Pyramid]
+    subgraph Testing_Pyramid [Bibliophile Testing Pyramid]
         E2E["E2E Tests (11 Critical User Journeys)"]
         INT["Integration Tests (Auth, Catalogue, Wishlist, Cart, Checkout, Orders)"]
         COMP["Component Tests (ProductCard, Cart, Checkout, Forms, Dialogs, Filters, Nav)"]
@@ -87,7 +87,7 @@ sequenceDiagram
     autonumber
     actor Guest as Guest User
     actor User as Registered User
-    participant App as BookWorm Frontend
+    participant App as Bibliophile Frontend
     participant Auth as Auth Service
     participant Repo as Data Repository / DB
 

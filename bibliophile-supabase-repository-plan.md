@@ -1,4 +1,4 @@
-# BookWorm — Supabase Repository Migration Plan
+# Bibliophile — Supabase Repository Migration Plan
 
 ## Top-Level Overview
 
@@ -112,11 +112,11 @@ during local development.
    seeded values defined at the top of the file as variables).
 
 **Relevant Context:**
-- `bookworm-phase6-supabase-plan.md` §3 — column-by-column table definitions
+- `bibliophile-phase6-supabase-plan.md` §3 — column-by-column table definitions
 - `src/repositories/mock/mockData.ts` — the data to seed
 - `src/types/book.ts`, `src/types/review.ts` — TypeScript shapes that the DB
   columns must match
-- `bookworm-phase6-supabase-plan.md` §8–§9 — RLS enable + public-read policies
+- `bibliophile-phase6-supabase-plan.md` §8–§9 — RLS enable + public-read policies
 
 **Status:** `[x] done`
 
@@ -172,7 +172,7 @@ other methods follow.
 - `src/repositories/BookRepository.ts` — the interface to implement
 - `src/types/book.ts` — `Book`, `Category`, `Publisher` domain types
 - `src/lib/supabase.ts` — the typed client from Sub-Task 1
-- `bookworm-phase6-supabase-plan.md` §7 — class structure and query designs
+- `bibliophile-phase6-supabase-plan.md` §7 — class structure and query designs
 - `src/repositories/mock/MockBookRepository.ts` — reference for the expected
   return shapes
 
@@ -228,7 +228,7 @@ composable query builder.
 **Relevant Context:**
 - `src/repositories/BookRepository.ts` — `BookFilters`, `BooksResult`,
   `SortField`
-- `bookworm-phase6-supabase-plan.md` §7 `getBooks` section — query design
+- `bibliophile-phase6-supabase-plan.md` §7 `getBooks` section — query design
 - `src/repositories/mock/MockBookRepository.ts` `getBooks` — filter logic to
   mirror
 - `src/hooks/useCatalogueData.ts` — queryKey includes `filters` object, so
@@ -274,10 +274,10 @@ business rule.
 
 **Relevant Context:**
 - `src/types/review.ts` — `Review` type with `reviewer_name: string`
-- `bookworm-phase6-supabase-plan.md` §7 `getReviews` section
+- `bibliophile-phase6-supabase-plan.md` §7 `getReviews` section
 - `src/hooks/useBookDetail.ts` — `useSubmitReview` calls `submitReview` and
   invalidates `['books', bookId, 'reviews']` on success
-- `bookworm-phase6-supabase-plan.md` §10 `reviews` — RLS: authenticated users
+- `bibliophile-phase6-supabase-plan.md` §10 `reviews` — RLS: authenticated users
   can insert/update their own review; all can read
 
 **Status:** `[x] done`
@@ -308,7 +308,7 @@ excluding the current book itself.
    `categoryIds = []`.
 
 **Relevant Context:**
-- `bookworm-phase6-supabase-plan.md` §7 `getRelatedBooks` section
+- `bibliophile-phase6-supabase-plan.md` §7 `getRelatedBooks` section
 - `src/hooks/useBookDetail.ts` — query enabled only when `categoryIds.length > 0`
 - `src/repositories/mock/MockBookRepository.ts` `getRelatedBooks` — reference
 
@@ -355,7 +355,7 @@ production build uses the real implementation. Document all required env vars.
 **Relevant Context:**
 - `src/repositories/index.ts` — the one-line swap point
 - `e-book-store-fe/src/lib/supabase.ts` — env var consumption
-- `bookworm-phase6-supabase-plan.md` §2 — env var definitions
+- `bibliophile-phase6-supabase-plan.md` §2 — env var definitions
 
 **Status:** `[x] done`
 
@@ -400,7 +400,7 @@ any UI-layer changes.
 **Relevant Context:**
 - `src/hooks/useBookDetail.ts` — `isError`, `refetch`, `NotFoundState`
 - `src/pages/BookDetailPage.tsx` — already handles `!book` with `NotFoundState`
-- `bookworm-phase6-supabase-plan.md` §11 — error handling design
+- `bibliophile-phase6-supabase-plan.md` §11 — error handling design
 
 **Status:** `[x] done`
 
@@ -441,7 +441,7 @@ against the generated types without requiring runtime transformations.
 **Relevant Context:**
 - `src/types/book.ts` — domain types that `mapBook` must produce
 - `src/lib/database.types.ts` — the generated/stub type file
-- `bookworm-phase6-supabase-plan.md` §6 — generated TypeScript types design
+- `bibliophile-phase6-supabase-plan.md` §6 — generated TypeScript types design
 
 **Status:** `[x] done`
 
